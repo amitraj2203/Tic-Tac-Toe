@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ProgressBar
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <TextView
+        android:id="@+id/LoadingCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Won :)"
+        android:layout_below="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/toastbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Toast"
+        android:layout_below="@id/LoadingCompleteTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@id/toastbutton"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="300dp" />
+
+    <Button
+        android:id="@+id/notificationbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notify"
+        android:layout_below="@id/toastbutton"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="25dp"
+
+         />
+
+
+</RelativeLayout>
